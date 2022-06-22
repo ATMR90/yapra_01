@@ -1,10 +1,6 @@
-console.log('PUG!');
-
 document.addEventListener('DOMContentLoaded', start);
 
-
 function start() {
-  console.log('PUG! Start');
 	let login = document.getElementById('login');
 	
 	login.addEventListener('focus', () => {
@@ -20,7 +16,6 @@ function start() {
 };
 
 function signInBtn() {
-  console.log('PUG! Btn');
 	let login = document.getElementById('login');
 	let password = document.getElementById('password');
 	if (login.value === '') {
