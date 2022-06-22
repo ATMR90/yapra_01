@@ -2,15 +2,18 @@
   "name": "yapra_01",
   "version": "1.0.0",
   "description": "",
-  
   "scripts": {
     "clean:output": "rm -rf dist/*",
     "start": "parcel ./static/index.html --port 3000",
-    "build": "npm run clean:output && parcel build ./static/index.html"
+    "build": "npm run clean:output && parcel build ./static/index.html",
+    "pug": "parcel ./src/pug/index.pug --port 3000",
+    "pug:build": "npm run clean:output && parcel build ./src/pug/index.pug",
+    "netlify":"npm run pug:build"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-pug": "^2.6.2",
     "parcel": "^2.6.2"
   }
 }
