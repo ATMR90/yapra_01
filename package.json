@@ -6,8 +6,8 @@
     "clean:output": "rm -rf dist/*",
     "start": "parcel ./static/index.html --port 3000",
     "build": "npm run clean:output && parcel build ./static/index.html",
-    "pug": "parcel ./src/pug/index.pug ./src/pug/signIn.pug ./src/pug/signUp.pug --port 3000",
-    "pug:build": "npm run clean:output && parcel build ./src/pug/index.pug ./src/pug/signIn.pug ./src/pug/signUp.pug",
+    "pug": "parcel ./src/pug/index.pug --port 3000",
+    "pug:build": "npm run clean:output && parcel build ./src/pug/index.pug",
     "netlify":"npm run pug:build"
   },
   "author": "",

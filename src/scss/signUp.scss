@@ -54,7 +54,7 @@ body {
 		display: flex;
 		justify-content: space-between;
 		flex-wrap: wrap;
-		overflow: scroll;
+		overflow: auto;
 		padding-top: 8px;
 		@media (min-width: 768px) {
 			& :nth-child(1) {
