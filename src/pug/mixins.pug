@@ -1,5 +1,8 @@
 mixin input(idInput,type,label)
 	.input
-		input.input__field.input__field_text(id=idInput type=type)
+		if block
+			block 
+		else
+			input.input__field.input__field_text(id=idInput type=type)
 		.input__label=label
 

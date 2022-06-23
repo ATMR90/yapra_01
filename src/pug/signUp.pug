@@ -14,12 +14,10 @@ block content
 					+input('first_name','text','Имя')
 					+input('second_name','text','Фамилия')
 					+input('phone','text','Телефон')
-					.input
+					+input('','','Логин')
 						input.input__field.input__field_text#login(type="text" oninput="loginInputHandler()")
-						.input__label Логин
-					.input 
+					+input('','','Пароль')
 						input.input__field.input__field_text#passwordOne(type="password" oninput="passwordOneInputHandler()")
-						.input__label Пароль
 					+input('passwordTwo','password','Пароль еще раз')
 				.submit.card__submit 
 					.submit__error#submit__error 
