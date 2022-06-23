@@ -1,0 +1,52 @@
+extends layout/main
+
+block scripts 
+	link(rel="stylesheet", href="/src/css/chat.css")
+	script(src="chat.js")
+
+block content
+	.ya-chat 
+		.ya-chat__panel.chat-panel
+			.chat-panel__search 
+				input(placeholder="Поиск")
+			.chat-panel__list.list
+				.list__item
+					img(src="../assets/img/@cloud_l.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_r.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_l.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_r.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_r.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_r.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_r.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_r.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_r.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_r.png", alt="New chat")
+				.list__item
+					img(src="../assets/img/@cloud_r.png", alt="New chat")
+			.chat-panel__settings.chat-settings 
+				.chat-settings__new-chat
+					img(src="../assets/img/new_chat.png", alt="New chat")
+					| Новый чат
+				.chat-settings__settings 
+					img(src="../assets/img/settings.png", alt="Settings")
+					| Настройки
+		.ya-chat__messages.messages
+			.messages__container Выберете чат или создайте новый
+			.messages__new.new-message 
+				.new-message__attachment
+					img(src="../assets/img/attachment.png", alt="Settings")
+				.new-message__input 
+					input(id='message' placeholder="Сообщение")
+				.new-message__send
+					img(src="../assets/img/send.png", alt="Settings")
+
+
