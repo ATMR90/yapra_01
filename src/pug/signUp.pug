@@ -1,42 +1,29 @@
-<!DOCTYPE html>
-html(lang="en")
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		title Яндекс практикум
-		link(rel="stylesheet", href="/src/css/signUp.css")
-		script(src="signUp.js") 
-	body
-		.ya-sign-up
-			.card.ya-sign-up__card.card_shadow
-				.card__title Регистрация
-				.card__form
-					.card__fields
-						.input 
-							input.input__field.input__field_text#email(type="text")
-							.input__label Почта
-						.input 
-							input.input__field.input__field_text#firstName(type="text")
-							.input__label Имя
-						.input 
-							input.input__field.input__field_text#lastName(type="text")
-							.input__label Фамилия
-						.input 
-							input.input__field.input__field_text#phone(type="text")
-							.input__label Телефон
-						.input#inputLogin 
-							input.input__field.input__field_text#login(type="text" oninput="loginInputHandler()")
-							.input__label Логин
-						.input 
-							input.input__field.input__field_text#passwordOne(type="password" oninput="passwordOneInputHandler()")
-							.input__label Пароль
-						.input 
-							input.input__field.input__field_text#passwordTwo(type="password")
-							.input__label Пароль еще раз
-					.submit.card__submit 
-						.submit__error#submit__error 
-						.submit__btn(onclick="singUpBtn()") Регистрация
-				.card__footer 
-					| Есть аккаунт? 
-					a.card_link(href="signIn.pug") Вход
+extends layout/main
+
+block scripts
+	link(rel="stylesheet", href="/src/css/signUp.css")
+	script(src="signUp.js") 
+
+block content
+	.ya-sign-up
+		.card.ya-sign-up__card.card_shadow
+			.card__title Регистрация
+			.card__form
+				.card__fields
+					+input('email','text','Почта')
+					+input('first_name','text','Имя')
+					+input('second_name','text','Фамилия')
+					+input('phone','text','Телефон')
+					.input
+						input.input__field.input__field_text#login(type="text" oninput="loginInputHandler()")
+						.input__label Логин
+					.input 
+						input.input__field.input__field_text#passwordOne(type="password" oninput="passwordOneInputHandler()")
+						.input__label Пароль
+					+input('passwordTwo','password','Пароль еще раз')
+				.submit.card__submit 
+					.submit__error#submit__error 
+					.submit__btn(onclick="singUpBtn()") Регистрация
+			.card__footer 
+				| Есть аккаунт? 
+				a.card_link(href="signIn.pug") Вход

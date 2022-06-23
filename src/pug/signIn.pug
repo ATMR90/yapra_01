@@ -1,30 +1,20 @@
-<!DOCTYPE html>
-html(lang="en")
-	head
-		meta(charset="UTF-8")
-		meta(name="viewport" content="width=device-width, initial-scale=1.0")
-		meta(http-equiv="X-UA-Compatible" content="ie=edge")
-		title Яндекс практикум
-		link(rel="stylesheet", href="/src/css/signIn.css")
-		script(src="signIn.js") 
-	body
-		.ya-sign-in
-			.card.ya-sign-in__card.card_shadow
-				.card__title Вход
-				.card__form
-					.card__fields
-						.input#inputLogin 
-							input.input__field.input__field_text#login(type="text")
-							.input__label Логин
-							//- | Логин
-						.input 
-							input.input__field.input__field_text#password(type="password")
-							.input__label Пароль
-							//- | Пароль
-					.submit.card__submit 
-						.submit__error#submit__error 
-						.submit__btn(onclick="signInBtn()") Войти
-						//- | Войти
-				.card__footer 
-					| Нет аккаунта? 
-					a.card_link(href="signUp.pug") Регистрация
+extends layout/main
+
+block scripts
+	link(rel="stylesheet", href="/src/css/signIn.css")
+	script(src="signIn.js") 
+
+block content 
+	.ya-sign-in
+		.card.ya-sign-in__card.card_shadow
+			.card__title Вход
+			.card__form
+				.card__fields
+					+input('login','text','Логин')
+					+input('password','password','Пароль')
+				.submit.card__submit 
+					.submit__error#submit__error 
+					.submit__btn(onclick="signInBtn()") Войти
+			.card__footer 
+				| Нет аккаунта? 
+				a.card_link(href="signUp.pug") Регистрация
