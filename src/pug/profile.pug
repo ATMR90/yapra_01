@@ -1,0 +1,29 @@
+extends layout/main
+
+block scripts
+	link(rel="stylesheet", href="/src/css/profile.css")
+	script(src="profile.js") 
+
+block content
+	.ya-prof 
+		.ya-prof__profile.profile.profile_shadow
+			.profile__header.prof-header
+				.prof-header__back 
+					img(src="../assets/img/back.png", alt="Back")
+				.prof-header__title Профиль
+				.prof-header__close 
+			.profile__data
+				.profile__fields 
+					+input('email','text','Почта')
+					+input('login','text','Логин')
+					+input('first_name','text','Имя')
+					+input('second_name','text','Фамилия')
+					+input('phone','text','Телефон')
+				.profile__avatar
+					img(src="../assets/img/message-card__avatar.png", alt="Avatar")
+					.profile__btn.profile__btn_red Удалить аватар
+			.profile__footer.prof-footer
+				.prof-footer__error 
+				.profile__btn.profile__btn_main Сохранить изменения
+				.profile__btn Сменить пароль
+				.profile__btn.profile__btn_red Выйти из аккаунта
