@@ -8,7 +8,8 @@
     "build": "npm run clean:output && parcel build ./static/index.html",
     "pug": "npm run clean:output && parcel ./src/pug/index.pug --port 3000",
     "pug:build": "npm run clean:output && parcel build ./src/pug/index.pug",
-    "netlify":"npm run pug:build"
+    "netlify": "npm run pug:build",
+    "serve": "npm run pug:build && node ./server/server.js"
   },
   "author": "",
   "license": "ISC",
