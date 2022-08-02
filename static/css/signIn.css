@@ -1,16 +1,25 @@
-.ya-prof {
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.ya-sign-in {
   background: #e5e5e5;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100%;
 }
-.ya-prof__profile {
-  max-width: 500px;
-  max-height: 700px;
+.ya-sign-in__card {
+  max-width: 340px;
+  max-height: 480px;
 }
 
-.profile {
+.card {
   background: #fff;
   width: 100%;
   height: 100%;
@@ -19,9 +28,7 @@
   display: flex;
   flex-direction: column;
 }
-.profile__header {
-  display: flex;
-  justify-content: space-between;
+.card__title {
   margin: 24px 0 48px;
   font-family: "Inter";
   font-style: normal;
@@ -31,56 +38,31 @@
   text-align: center;
   color: #0e0e0e;
 }
-.profile__data {
-  display: flex;
-}
-.profile__fields {
-  flex: 2;
-}
-.profile__avatar {
-  flex: 1;
-  padding-left: 20px;
+.card__form {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
+  flex: 1;
 }
-.profile__footer {
-  padding-top: 50px;
+.card__submit {
+  margin-bottom: 16px;
 }
-.profile_shadow {
-  box-shadow: 0px 8px 48px -16px rgba(0, 0, 0, 0.25);
-  border-radius: 12px;
-}
-
-.button {
-  cursor: pointer;
-  user-select: none;
+.card__footer {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
   text-align: center;
+  color: #0e0e0e;
 }
-.button:hover {
-  opacity: 0.9;
-}
-.button:active {
-  opacity: 0.75;
-}
-.button_medium {
-  line-height: 50px;
-  padding: 0 10px;
-  border-radius: 8px;
-}
-.button_medium.button_blue {
-  color: #fff;
-  background-color: #0380DA;
-}
-.button_medium.button_red {
-  color: #fff;
-  background-color: #DF4863;
-}
-.button_blue {
+.card_link {
+  text-decoration: none;
   color: #0380DA;
 }
-.button_red {
-  color: #DF4863;
+.card_shadow {
+  box-shadow: 0px 8px 48px -16px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
 }
 
 .input {
@@ -137,4 +119,36 @@
   color: #0380DA;
 }
 
-/*# sourceMappingURL=profile.css.map */
+.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submit__error {
+  width: 100%;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #DF4863;
+  margin-bottom: 16px;
+}
+.submit__btn {
+  background: #0380DA;
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=signIn.css.map */

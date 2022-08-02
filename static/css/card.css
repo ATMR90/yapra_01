@@ -1,0 +1,199 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.ya-sign-up {
+  background: #e5e5e5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+.ya-sign-up__card {
+  max-width: 656px;
+  max-height: 580px;
+}
+
+.card {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  padding: 14px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+@media (min-width: 768px) {
+  .card {
+    padding: 24px;
+  }
+}
+.card__title {
+  margin: 24px 0 40px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  color: #0e0e0e;
+}
+.card__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  overflow: hidden;
+}
+.card__fields {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  overflow: auto;
+  padding-top: 8px;
+}
+@media (min-width: 768px) {
+  .card__fields :nth-child(1) {
+    order: 1;
+  }
+  .card__fields :nth-child(2) {
+    order: 3;
+  }
+  .card__fields :nth-child(3) {
+    order: 5;
+  }
+  .card__fields :nth-child(4) {
+    order: 7;
+  }
+  .card__fields :nth-child(5) {
+    order: 2;
+  }
+  .card__fields :nth-child(6) {
+    order: 4;
+  }
+  .card__fields :nth-child(7) {
+    order: 6;
+  }
+}
+.card__fields .input {
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .card__fields .input {
+    width: 292px;
+  }
+}
+.card__submit {
+  margin-bottom: 16px;
+}
+.card__footer {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  color: #0e0e0e;
+}
+.card_link {
+  text-decoration: none;
+  color: #0380da;
+}
+.card_shadow {
+  box-shadow: 0px 8px 48px -16px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.input {
+  position: relative;
+}
+.input__label {
+  background: #fff;
+  position: absolute;
+  left: 8px;
+  top: -8px;
+  z-index: 1;
+  padding: 0 3px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #808080;
+}
+.input input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+}
+.input input:focus {
+  outline: none;
+  border: 1px solid #0380da;
+}
+.input input:focus + .input__label {
+  color: #0380da;
+}
+.input input.input_error {
+  border: 1px solid #df4863;
+}
+.input input.input_error + .input__label {
+  color: #df4863;
+}
+.input:not(:last-child) {
+  margin-bottom: 25px;
+}
+.input_error input {
+  color: red;
+  border: 1px solid red;
+}
+.input_error .input__label {
+  color: red;
+}
+.input_active input {
+  border: 1px solid #0380da;
+}
+.input_active .input__label {
+  color: #0380da;
+}
+
+.submit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.submit__error {
+  width: 100%;
+  text-align: center;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #df4863;
+  margin-bottom: 16px;
+}
+.submit__btn {
+  background: #0380da;
+  color: white;
+  text-align: center;
+  width: 100%;
+  border-radius: 8px;
+  padding: 14px 16px;
+  box-sizing: border-box;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  cursor: pointer;
+}
+
+/*# sourceMappingURL=card.css.map */

@@ -1,0 +1,26 @@
+extends layout/main
+
+block scripts
+	link(rel="stylesheet", href="/src/css/card.css")
+	script(src="signUp.js") 
+
+block content
+	.ya-sign-up
+		+card("Регистрация!!",true,true)(class="ya-sign-up__card")
+			.card__form
+				.card__fields
+					+input('email','text','Почта')
+					+input('first_name','text','Имя')
+					+input('second_name','text','Фамилия')
+					+input('phone','text','Телефон')
+					+input('','','Логин')
+						input.input__field.input__field_text#login(type="text" oninput="loginInputHandler()")
+					+input('','','Пароль')
+						input.input__field.input__field_text#passwordOne(type="password" oninput="passwordOneInputHandler()")
+					+input('passwordTwo','password','Пароль еще раз')
+				.submit.card__submit 
+					.submit__error#submit__error 
+					.submit__btn(onclick="singUpBtn()") Регистрация
+			.card__footer 
+				| Есть аккаунт? 
+				a.card_link(href="signIn.pug") Вход

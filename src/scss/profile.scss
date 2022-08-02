@@ -51,32 +51,42 @@ $color_main: #0380DA;
 		align-items: center;
 	}
 
-	&__btn {
-		padding-top: 10px;
-		text-align: center;
-		color: #0380DA;
-		cursor: pointer;
-		border-radius: 8px;
+	// &__btn {
+	// 	padding-top: 10px;
+	// 	text-align: center;
+	// 	color: rgb(3, 128, 218);
+	// 	cursor: pointer;
+	// 	border-radius: 8px;
 
-		&_main {
-			padding: 14px 16px;
-			background: #0380DA;
-			color: #fff;
+	// 	&_main {
+	// 		padding: 14px 16px;
+	// 		background: #0380DA;
+	// 		color: #fff;
 			
-		}
+	// 	}
 
-		&_main:hover {
-			opacity: 0.9;
-		}
+	// 	&_main:hover {
+	// 		opacity: 0.9;
+	// 	}
 
-		&_main:active {
-			opacity: 0.75;
-		}
+	// 	&_main:active {
+	// 		opacity: 0.75;
+	// 	}
 
-		&_red {
-			color: #DF4863;
-		}
-	}
+	// 	&:hover {
+	// 		color: rgba(3, 128, 218, 0.9);
+	// 	}
+
+	// 	&:active {
+	// 		color: rgba(3, 128, 218, 0.75);
+	// 	}
+
+	// 	&_red {
+	// 		color: rgb(223, 72, 99);
+	// 	}
+	// }
+
+	
 
 	&__footer {
 		padding-top: 50px;
@@ -87,6 +97,46 @@ $color_main: #0380DA;
 		border-radius: 12px;
 	}
 }
+
+.button {
+	cursor: pointer;
+	user-select: none;
+	text-align: center;
+
+	&:hover {
+		opacity: 0.9;
+	}
+
+	&:active {
+		opacity: 0.75;
+	}
+
+	&_medium {
+		line-height: 50px;
+		padding: 0 10px;
+		border-radius: 8px;
+
+		&.button_blue {
+			color: #fff;
+			background-color: #0380DA;
+		}
+	
+		&.button_red {
+			color: #fff;
+			background-color: #DF4863;
+		}
+	}
+
+	&_blue {
+		color: #0380DA;
+	}
+
+	&_red {
+		color: #DF4863;
+	}
+
+}
+
 .prof-header {
 
 	&__back {

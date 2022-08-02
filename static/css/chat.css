@@ -1,0 +1,147 @@
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+.ya-chat {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+.ya-chat__panel {
+  height: 100%;
+}
+.ya-chat__messages {
+  flex: 1;
+  height: 100%;
+}
+
+.chat-panel {
+  max-width: 326px;
+  height: 100%;
+  padding-top: 24px;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.chat-panel__search {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 24px;
+  padding-top: 16px;
+  border-bottom: 1px solid #E0E0E0;
+}
+.chat-panel__search input {
+  min-width: 278px;
+  box-sizing: border-box;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  padding: 14px 16px;
+}
+.chat-panel__list {
+  box-sizing: border-box;
+  padding: 24px 24px 0 24px;
+  height: 100%;
+}
+.chat-panel__settings {
+  border-top: 1px solid #E0E0E0;
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+  color: #0380DA;
+}
+.chat-panel__settings img {
+  margin-right: 8px;
+}
+
+.list {
+  box-sizing: border-box;
+  overflow: auto;
+  height: 100%;
+}
+.list__item {
+  margin-bottom: 6px;
+}
+
+.chat-settings__new-chat {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.chat-settings__settings {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.messages {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.messages__container {
+  height: 100%;
+  width: 100%;
+  background: #F5F5F5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.messages__new {
+  box-sizing: border-box;
+  border-top: 1px solid #E0E0E0;
+}
+
+.new-message {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #F5F5F5;
+  width: 100%;
+  height: 100%;
+  max-height: 71px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 19px;
+}
+.new-message__input {
+  width: 100%;
+}
+.new-message__input input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+  border: 1px solid #E0E0E0;
+  border-radius: 8px;
+}
+.new-message__attachment {
+  display: flex;
+  justify-content: center;
+  width: 64px;
+}
+.new-message__send {
+  display: flex;
+  justify-content: center;
+  width: 64px;
+}
+
+/*# sourceMappingURL=chat.css.map */

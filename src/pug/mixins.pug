@@ -6,3 +6,15 @@ mixin input(idInput,type,label)
 			input.input__field.input__field_text(id=idInput type=type)
 		.input__label=label
 
+mixin card(title,back,close)
+	.card.card_shadow&attributes(attributes)
+		.card__header.card-header
+			if back
+				.card__back 
+					img(src="../assets/img/back.png", alt="Back")
+			.card__title=title
+			if close 
+				.card__close
+					img(src="../assets/img/back.png", alt="Back")
+		if block 
+			block
